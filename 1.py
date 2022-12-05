@@ -1,4 +1,4 @@
-import pandas as pd
+
 
 list = []
 for line in open('1input.txt','r'):
@@ -9,9 +9,12 @@ for i in list:
     if not i:
         result.append([])
     else:
-        result[-1].append(i)
+        result[-1].append(int(i))
 
+add = []
+for i in range(len(result)):
+	sum += result[i]
 
-#res.sort()
+print(add) 
+#print(result.sort())
 #print((res[-1]))
-print(result)
